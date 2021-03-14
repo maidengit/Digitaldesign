@@ -1,0 +1,130 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    padding-top: 40%;
+  }
+  to {
+    opacity: 1;
+    padding-top: 0%;
+  }
+}
+
+@keyframes background-change {
+  0% {
+    background-image: url("/assets/images/index/turismo-1.jpg");
+  }
+  33.32% {
+    background-image: url("/assets/images/index/turismo-1.jpg");
+  }
+  33.33% {
+    background-image: url("/assets/images/index/turismo-2.jpg");
+  }
+  66.65% {
+    background-image: url("/assets/images/index/turismo-2.jpg");
+  }
+  66.66% {
+    background-image: url("/assets/images/index/turismo-3.jpg");
+  }
+  100% {
+    background-image: url("/assets/images/index/turismo-3.jpg");
+  }
+}
+
+@keyframes nav-arrow-bottom {
+  from {
+    top: 100vh;
+    opacity: 0;
+  }
+  to {
+    top: 80vh;
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    padding-top: 0vh;
+  }
+  50% {
+    padding-top: 1vh;
+  }
+  100% {
+    padding-top: 0vh;
+  }
+}
+.fadeIn-title {
+  user-select: none;
+  padding-bottom: 60vh;
+  font-size: 40pt;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+.nav-arrow-bottom {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  color: white;
+  animation: nav-arrow-bottom 3s ease-in-out;
+}
+
+.nav-arrow-bottom img {
+  animation-delay: 3.5s;
+  animation-name: float;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.header {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/images/index/turismo-1.jpg");
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
+  color: white;
+  animation: infinite;
+  animation-name: background-change;
+  transition: background-image 0.5s linear;
+  animation-duration: 20s;
+}
+
+.content {
+  font-weight: 800;
+  padding: 2vw 15vw;
+}
+
+section {
+  margin-bottom: 5vh;
+}
+
+section p:nth-child(2) {
+  margin-left: 40px;
+}
+section p:nth-child(1) {
+  margin-right: 40px;
+}
+section img {
+  width: 30vw;
+  object-fit: cover;
+  box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.content h1 {
+  font-size: 40pt;
+}
+.content h2 {
+  font-size: 26pt;
+}
+section p {
+  font-weight: 600;
+  font-size: 14pt;
+}
