@@ -11,22 +11,22 @@
 
 @keyframes background-change {
   0% {
-    background-image: url("/assets/images/index/turismo-1.jpg");
+    background-image: url("../assets/images/index/turismo-1.jpg");
   }
   33.32% {
-    background-image: url("/assets/images/index/turismo-1.jpg");
+    background-image: url("../assets/images/index/turismo-1.jpg");
   }
   33.33% {
-    background-image: url("/assets/images/index/turismo-2.jpg");
+    background-image: url("../assets/images/index/turismo-2.jpg");
   }
   66.65% {
-    background-image: url("/assets/images/index/turismo-2.jpg");
+    background-image: url("../assets/images/index/turismo-2.jpg");
   }
   66.66% {
-    background-image: url("/assets/images/index/turismo-3.jpg");
+    background-image: url("../assets/images/index/turismo-3.jpg");
   }
   100% {
-    background-image: url("/assets/images/index/turismo-3.jpg");
+    background-image: url("../assets/images/index/turismo-3.jpg");
   }
 }
 
