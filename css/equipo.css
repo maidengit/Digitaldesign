@@ -1,17 +1,23 @@
-@keyframes animacionImg {
+/* @keyframes animacionImg {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
+} */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    padding-top: 40%;
+  }
+  to {
+    opacity: 1;
+    padding-top: 0%;
+  }
 }
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: Times New Roman;
-}
+
 .tabla {
   height: auto;
   width: 90%;
@@ -20,11 +26,13 @@
   margin-top: 5px;
   margin-bottom: 30px;
 }
+
 .fila {
   width: 100%;
   height: auto;
   display: table-row;
 }
+
 .celda {
   border: 1px solid white;
   height: auto;
@@ -33,46 +41,47 @@
   display: table-cell;
   margin: auto;
   vertical-align: middle;
-  background-color: #ffb762;
+  background-color: #b2e6d4;
   padding: 10px;
+  font-size: 14pt;
 }
+
 .encabezado {
   position: sticky;
   top: 6vh;
-  background-color: #1cbbc4;
+  background-color: #528879;
   opacity: 0.9;
   text-transform: uppercase;
   font-weight: bolder;
   color: #fff;
 }
+
 .titulo {
   text-align: center;
-  animation: slideInDown;
+  font-size: 40pt;
+  /* animation: slideInDown;
   animation-duration: 1s;
-  animation-iteration-count: 1;
-  color: white;
-  background-color: steelblue;
-  width: 90%;
+  animation-iteration-count: 1; */
+  /* color: white; */
+  /* background-color: steelblue; */
+  width: 30%;
   margin: auto;
   margin-top: 8vh;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding-top: 3px;
   padding-bottom: 3px;
 }
-div {
-  animation: slideInUp;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-}
+
 .foto {
   border-radius: 10%;
-  animation: animacionImg;
+  /* animation: animacionImg;
   animation-duration: 1s;
   animation-delay: 1s;
-  animation-iteration-count: 1;
-  box-shadow: 5px 5px 5px #4fd190;
+  animation-iteration-count: 1; */
+  box-shadow: 1px 1px 20px 0px #689689;
 }
-.flecha {
+
+/* .flecha {
   position: fixed;
   bottom: 5px;
   right: 10px;
@@ -82,9 +91,7 @@ div {
   animation: none;
   border-radius: 100%;
 }
+
 .flecha:hover {
   opacity: 0.5;
-}
-body {
-  background-color: lightgray;
-}
+} */

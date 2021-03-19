@@ -1,0 +1,129 @@
+@keyframes guionfondo {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInitial {
+  from {
+    opacity: 0;
+    margin-top: 7%;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0%;
+  }
+}
+
+.animacion {
+  animation: fadeInitial;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+/* * {
+  margin: 0px;
+  padding: 0px;
+} */
+
+.titulo {
+  text-align: center;
+  font-size: 40pt;
+  width: 30%;
+  margin: auto;
+  margin-top: 8vh;
+  padding-top: 3px;
+  /* padding-bottom: 3px; */
+  color: #f9f7f3;
+}
+
+.informacion {
+  position: relative;
+  background-color: #a59c95;
+  font-size: 15pt;
+  color: #f9f7f3;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  /* padding-bottom: 40px;
+  padding-top: 10px; */
+  /* margin-top: 7vh; */
+  z-index: -10;
+  border-radius: 30px;
+  filter: opacity(90%);
+}
+
+.informacion2 {
+  position: relative;
+  /* background-color: white; */
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+  top: 20px;
+}
+
+.todo h2 {
+  /*border: 5px double green;*/
+  /*border-bottom: 5px dashed brown;*/
+  /*border-top-left-radius: 30px;*/
+  /*border-top-right-radius: 30px;*/
+  margin-bottom: 10px;
+  /* font-family: arial; */
+  text-align: center;
+}
+
+.fondo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  animation: guionfondo;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  z-index: -1000;
+  object-fit: cover;
+  background-position: center;
+  background-color: rgba(80, 80, 80, 0.7);
+  background-blend-mode: darken;
+}
+
+.tabla {
+  position: relative;
+  height: auto;
+  width: 80%;
+  margin: auto;
+  width: 90%;
+  padding: auto;
+  padding-left: 20px;
+}
+
+.fila {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: table; /*los elementos se mantienen agrupados en la misma fila*/
+}
+
+.celdas {
+  /* border: 0px solid black; */
+  /* height: 100px; */
+  width: 50%;
+  height: 100%;
+  float: left;
+}

@@ -6,8 +6,8 @@
   width: 100vw;
   user-select: none;
   padding: 0px 20px 0px 40px;
-  background-color: #333;
-  color: white;
+  background-color: #504136;
+  color: #f9f7f3;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,7 +20,7 @@
 }
 
 .navbar a:hover {
-  color: steelblue;
+  color: #cfcac4;
 }
 
 .nav-link {

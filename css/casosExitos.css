@@ -1,0 +1,72 @@
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  margin-left: -11em;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 40pt;
+  width: 30%;
+  margin: auto;
+  margin-top: 8vh;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.tabla {
+  position: relative;
+  height: auto;
+  width: 80%;
+  margin: auto;
+  width: 90%;
+  padding: auto;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.fila {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: table;
+}
+
+.celdas {
+  /* border: 0px solid black; */
+  /* height: 100px; */
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.celdas p {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 13px;
+}
+
+.celdas img {
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.informacion {
+  position: relative;
+  background-color: #a59c95;
+  font-size: 15pt;
+  color: #f9f7f3;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  z-index: -10;
+  border-radius: 30px;
+  filter: opacity(90%);
+}
